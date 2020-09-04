@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secretify</title>
+
+    <!-- Link to Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Link to JS Files -->
+    <script defer src="resources/js/app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col s8 offset-s2">
+          <!-- Message Show -->
+          <div class="card-panel hide" id="message-show">
+            <!-- <h4 class="userName-show"></h4> -->
+            <!-- <p>Secret Message is</p> -->
+            <h3 class="heading"></h3>
+            <a href="./index.html">Create Your Own Secret Message</a>
+          </div>
+
+          <!-- Enter Secret Message Card -->
+          <div id="message-form" class="card-panel">
+            <form action="#">
+              <!-- <div class="form__inner-box">
+                <label for="userName">Enter Your Name</label>
+                <input type="text" id="userName" class="userName" />
+              </div> -->
+
+              <div class="form__inner-box">
+                <label for="userInput">Enter a Secret Message</label>
+                <input
+                  id="userInput"
+                  class="userInput"
+                  placeholder="Type Something Secret"
+                />
+              </div>
+              <button class="btn">Create</button>
+            </form>
+          </div>
+
+          <!-- Share Secret Message Card -->
+          <div id="link-form" class="card-panel hide">
+            <label for="#">Share Secret Message with friends</label>
+            <input class="userLink" type="text" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
